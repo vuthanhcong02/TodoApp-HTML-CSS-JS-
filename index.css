@@ -45,15 +45,16 @@ form button{
     background: #799f0c;    
     cursor: pointer;
 }
-ul li{
+.todos li{
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
     border-bottom: 1px solid #5e5e5e;
     align-items: center;
+    visibility: 0;
 }
-li i{
+.todos li i{
     color: gray;
     cursor: pointer;
     padding-bottom: 10px;
@@ -63,6 +64,7 @@ li.completed span{
 }
 li span{
     color: #5e5e5e;
+    cursor: pointer;
    
 }
 ul li span{
@@ -70,4 +72,10 @@ ul li span{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+ul li i{
+   opacity: 0;
+}
+li:hover i{
+    opacity: 1;
 }
