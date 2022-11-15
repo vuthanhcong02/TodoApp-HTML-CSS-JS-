@@ -60,12 +60,16 @@ form button{
     padding-bottom: 10px;
 }
 li.completed span{
-    text-decoration: line-through;    
+    text-decoration: line-through;  
+    font-style: italic;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;  
 }
 li span{
     color: #5e5e5e;
     cursor: pointer;
-   
+    color:red;
 }
 ul li span{
     width: 80%;
